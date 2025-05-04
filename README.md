@@ -29,7 +29,7 @@ This pipeline performs three main operations:
 Run the pipeline:
 
 ```bash
-node etl.js
+node index.js
 ```
 
 Successful execution will show:
@@ -58,6 +58,7 @@ Loaded data to ./transformed_data.json
   "description": "Original body field"
 }
 ```
+- Converts objects into arrays.
 
 ### 3. Loading
 
@@ -93,13 +94,6 @@ startEtl()
 - Validates output file path  
 - Handles unexpected data formats  
 
-## Future Enhancements
-
-- Add data validation  
-- Implement batch processing  
-- Add database integration  
-- Include unit tests  
-- Add CLI arguments for input/output paths  
 
 ## License
 
