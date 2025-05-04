@@ -9,13 +9,14 @@ A simple ETL (Extract, Transform, Load) pipeline that processes data from JSONPl
 
 This pipeline performs three main operations:
 
-1. **Extract**: Fetches post data from JSONPlaceholder API  
-2. **Transform**: Reformats the data structure  
+1. **Extract**: Fetches post data from JSONPlaceholder API
+2. **Transform**: Reformats the data structure
 3. **Load**: Saves transformed data to `transformed_data.json`
 
 ## Installation
 
 1. **Prerequisites**
+
    - Node.js (v18.x recommended)
    - npm (comes with Node.js)
 
@@ -29,14 +30,14 @@ This pipeline performs three main operations:
 Run the pipeline:
 
 ```bash
-node etl.js
+node index.js
 ```
 
 Successful execution will show:
 
 ```
-Extracted 100 objects  
-Transformed 100 objects  
+Extracted 100 objects
+Transformed 100 objects
 Loaded data to ./transformed_data.json
 ```
 
@@ -44,9 +45,9 @@ Loaded data to ./transformed_data.json
 
 ### 1. Extraction
 
-- Fetches data from [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)  
-- Handles both array and object responses  
-- Logs extraction count  
+- Fetches data from [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
+- Handles both array and object responses
+- Logs extraction count
 
 ### 2. Transformation
 
@@ -59,10 +60,12 @@ Loaded data to ./transformed_data.json
 }
 ```
 
+- Converts objects into arrays.
+
 ### 3. Loading
 
-- Saves transformed data to JSON file  
-- Creates formatted JSON with 2-space indentation  
+- Saves transformed data to JSON file
+- Creates formatted JSON with 2-space indentation
 - Output file: `transformed_data.json`
 
 ## Code Structure
@@ -89,17 +92,9 @@ startEtl()
 
 ## Error Handling
 
-- Catches and logs API errors  
-- Validates output file path  
-- Handles unexpected data formats  
-
-## Future Enhancements
-
-- Add data validation  
-- Implement batch processing  
-- Add database integration  
-- Include unit tests  
-- Add CLI arguments for input/output paths  
+- Catches and logs API errors
+- Validates output file path
+- Handles unexpected data formats
 
 ## License
 
