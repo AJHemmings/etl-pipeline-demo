@@ -1,0 +1,27 @@
+{
+  "name": "etl-pipeline-demo",
+  "version": "1.0.0",
+  "description": "A demo built to show a basic ETL pipeline.",
+  "keywords": [
+    "ETL",
+    "pipeline"
+  ],
+  "homepage": "https://github.com/AJHemmings/etl-pipeline-demo#readme",
+  "bugs": {
+    "url": "https://github.com/AJHemmings/etl-pipeline-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJHemmings/etl-pipeline-demo.git"
+  },
+  "license": "ISC",
+  "author": "Adam Hemmings",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.9.0"
+  }
+}
